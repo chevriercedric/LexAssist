@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexAssist | Assistant IA pour la Recherche Juridique Suisse</title>
+    <meta name="description" content="LexAssist - L'assistant IA spécialisé pour les avocats suisses. Réduisez de 30% votre temps de recherche juridique grâce à l'intelligence artificielle.">
+    <meta name="keywords" content="IA juridique, assistant avocat, recherche juridique, droit suisse, legal tech, Suisse">
+    <meta property="og:title" content="LexAssist | Assistant IA Juridique Suisse">
+    <meta property="og:description" content="Réduisez de 30% votre temps de recherche juridique grâce à l'IA spécialisée pour le droit suisse.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #16213e;
+            --accent: #c9a227;
+            --accent-light: #e8d48a;
+            --text: #e8e8e8;
+            --text-muted: #a0a0a0;
+            --white: #ffffff;
+            --gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%);
+            --gradient-accent: linear-gradient(135deg, #c9a227 0%, #e8d48a 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--gradient-dark);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Noise overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background: rgba(26, 26, 46, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(201, 162, 39, 0.1);
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--white);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            letter-spacing: 0.02em;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-cta {
+            background: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 0.7rem 1.8rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .nav-cta:hover {
+            background: var(--accent);
+            color: var(--primary);
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 5% 4rem;
+            position: relative;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            height: 100%;
+            background: radial-gradient(ellipse at 70% 30%, rgba(201, 162, 39, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(201, 162, 39, 0.1);
+            border: 1px solid rgba(201, 162, 39, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 6vw, 4.5rem);
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease-out 0.1s both;
+        }
+
+        .hero h1 span {
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 550px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.8s ease-out 0.3s both;
+        }
+
+        .stat {
+            text-align: left;
+        }
+
+        .stat-value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.3rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .btn-primary {
+            background: var(--gradient-accent);
+            color: var(--primary);
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(201, 162, 39, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text);
+            padding: 1rem 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Problem Section */
+        .problem {
+            padding: 8rem 5%;
+            background: rgba(15, 15, 26, 0.5);
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .section-description {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .problem-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 12px;
+            transition: all 0.4s ease;
+        }
+
+        .problem-card:hover {
+            background: rgba(201, 162, 39, 0.05);
+            border-color: rgba(201, 162, 39, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .problem-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .problem-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .problem-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Solution Section */
+        .solution {
+            padding: 8rem 5%;
+        }
+
+        .solution-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .solution-content h2 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .solution-content h2 span {
+            color: var(--accent);
+        }
+
+        .solution-content p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .features-list {
+            list-style: none;
+        }
+
+        .features-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .features-list li:hover {
+            background: rgba(201, 162, 39, 0.05);
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(201, 162, 39, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+
+        .feature-text h4 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: var(--white);
+        }
+
+        .feature-text p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .solution-visual {
+            position: relative;
+        }
+
+        .demo-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .demo-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-accent);
+        }
+
+        .demo-header {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .demo-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .demo-dot:first-child { background: #ff5f57; }
+        .demo-dot:nth-child(2) { background: #febc2e; }
+        .demo-dot:nth-child(3) { background: #28c840; }
+
+        .demo-content {
+            font-family: 'Monaco', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .demo-query {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .demo-response {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .typing-cursor {
+            display: inline-block;
+            width: 2px;
+            height: 1em;
+            background: var(--accent);
+            margin-left: 2px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        /* Pricing */
+        .pricing {
+            padding: 8rem 5%;
+            background: rgba(15, 15, 26, 0.5);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 3rem;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+
+        .pricing-card.featured {
+            background: rgba(201, 162, 39, 0.05);
+            border-color: rgba(201, 162, 39, 0.3);
+            transform: scale(1.02);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.02) translateY(-10px);
+        }
+
+        .plan-name {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .plan-price {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .plan-price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+
+        .plan-description {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .plan-features li {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .plan-features li::before {
+            content: '✓';
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* Contact / CTA */
+        .cta-section {
+            padding: 8rem 5%;
+            text-align: center;
+            position: relative;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(201, 162, 39, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-content p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Email Form */
+        .email-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .email-form input {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text);
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .email-form input:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .email-form input::placeholder {
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem 5% 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .swiss-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            margin-top: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-links {
+                display: none;
+            }
+
+            .solution-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
+
+            .email-form {
+                flex-direction: column;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">
+            <span class="logo-icon">⚖️</span>
+            LexAssist
+        </a>
+        <ul class="nav-links">
+            <li><a href="#problem">Problématique</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#pricing">Tarifs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-cta">Accès anticipé</button>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>En développement – Rejoignez les early adopters</span>
+            </div>
+            <h1>Récupérez <span>30%</span> de votre temps de recherche juridique</h1>
+            <p class="hero-description">
+                LexAssist est l'assistant IA conçu pour les avocats suisses. Recherche instantanée dans les 26 cantons, 4 langues nationales, liens directs vers les sources officielles.
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-value">30%</div>
+                    <div class="stat-label">Temps économisé</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">26</div>
+                    <div class="stat-label">Cantons couverts</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">4</div>
+                    <div class="stat-label">Langues supportées</div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary">
+                    Rejoindre la liste d'attente
+                    <span>→</span>
+                </a>
+                <a href="#solution" class="btn-secondary">Découvrir la solution</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="problem" id="problem">
+        <div class="section-header">
+            <p class="section-label">Le Problème</p>
+            <h2 class="section-title">La recherche juridique en Suisse est un casse-tête</h2>
+            <p class="section-description">
+                Les avocats suisses font face à des défis uniques qui consomment un temps précieux et impactent leur productivité.
+            </p>
+        </div>
+        <div class="problems-grid">
+            <div class="problem-card">
+                <div class="problem-icon">⏰</div>
+                <h3>30% du temps perdu</h3>
+                <p>La recherche documentaire juridique consomme près d'un tiers du temps facturable des avocats suisses.</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">🏔️</div>
+                <h3>26 cantons, 26 systèmes</h3>
+                <p>Chaque canton a ses spécificités légales. Naviguer entre elles demande une expertise locale chronophage.</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">🌍</div>
+                <h3>4 langues officielles</h3>
+                <p>Allemand, français, italien, romanche – les barrières linguistiques complexifient chaque recherche.</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">💰</div>
+                <h3>Outils coûteux et obsolètes</h3>
+                <p>Les solutions existantes coûtent CHF 3'500-8'000/an avec des interfaces vieillissantes et aucune IA.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="solution" id="solution">
+        <div class="solution-grid">
+            <div class="solution-content">
+                <p class="section-label">La Solution</p>
+                <h2>Une IA <span>spécialisée</span> pour le droit suisse</h2>
+                <p>
+                    LexAssist combine intelligence artificielle avancée et expertise juridique suisse pour transformer votre façon de travailler.
+                </p>
+                <ul class="features-list">
+                    <li>
+                        <div class="feature-icon">🎯</div>
+                        <div class="feature-text">
+                            <h4>Recherche canton-spécifique</h4>
+                            <p>Accédez instantanément aux textes juridiques de chaque canton avec leurs spécificités locales.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">🔗</div>
+                        <div class="feature-text">
+                            <h4>Liens officiels directs</h4>
+                            <p>Uniquement des sources gouvernementales vérifiées, mises à jour automatiquement par IA.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">🌐</div>
+                        <div class="feature-text">
+                            <h4>Multilingue natif</h4>
+                            <p>Recherchez en français, recevez des résultats en allemand – avec traduction contextuelle.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">🇪🇺</div>
+                        <div class="feature-text">
+                            <h4>Cartographie UE</h4>
+                            <p>Comprenez les connexions entre droit suisse et réglementations européennes.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="solution-visual">
+                <div class="demo-card">
+                    <div class="demo-header">
+                        <span class="demo-dot"></span>
+                        <span class="demo-dot"></span>
+                        <span class="demo-dot"></span>
+                    </div>
+                    <div class="demo-content">
+                        <div class="demo-query">
+                            > Quelles sont les règles de succession pour les biens immobiliers dans le canton de Vaud?<span class="typing-cursor"></span>
+                        </div>
+                        <div class="demo-response">
+                            <p style="color: var(--text); margin-bottom: 0.5rem;">📍 Canton de Vaud - Droit successoral</p>
+                            <p style="font-size: 0.8rem;">
+                                Art. 560 CC - Le partage s'effectue selon...<br>
+                                → <span style="color: var(--accent);">vd.ch/succession</span><br><br>
+                                Jurisprudence récente:<br>
+                                ATF 148 III 209 - Tribunal fédéral...<br>
+                                → <span style="color: var(--accent);">bger.ch/148-III-209</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="section-header">
+            <p class="section-label">Tarification</p>
+            <h2 class="section-title">Simple, transparent, abordable</h2>
+            <p class="section-description">
+                40-80% moins cher que les solutions traditionnelles, avec des fonctionnalités IA en plus.
+            </p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <p class="plan-name">Basic</p>
+                <p class="plan-price">CHF 49<span>/mois</span></p>
+                <p class="plan-description">Pour les avocats indépendants</p>
+                <ul class="plan-features">
+                    <li>Accès à 1 canton</li>
+                    <li>Recherches limitées (100/mois)</li>
+                    <li>Interface de base</li>
+                    <li>Support email</li>
+                </ul>
+                <a href="#contact" class="btn-secondary" style="width: 100%; text-align: center;">Rejoindre la liste</a>
+            </div>
+            <div class="pricing-card featured">
+                <p class="plan-name">Professional</p>
+                <p class="plan-price">CHF 120<span>/mois</span></p>
+                <p class="plan-description">Pour les cabinets exigeants</p>
+                <ul class="plan-features">
+                    <li>Accès aux 26 cantons</li>
+                    <li>Recherches illimitées</li>
+                    <li>Fonctionnalités avancées</li>
+                    <li>Support prioritaire</li>
+                    <li>API disponible</li>
+                </ul>
+                <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Rejoindre la liste</a>
+            </div>
+            <div class="pricing-card">
+                <p class="plan-name">Enterprise</p>
+                <p class="plan-price">Sur mesure</p>
+                <p class="plan-description">Pour les grands cabinets</p>
+                <ul class="plan-features">
+                    <li>Tout Professional inclus</li>
+                    <li>Déploiement sur site</li>
+                    <li>Intégrations custom</li>
+                    <li>Account manager dédié</li>
+                    <li>SLA garanti</li>
+                </ul>
+                <a href="#contact" class="btn-secondary" style="width: 100%; text-align: center;">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="cta-content">
+            <h2>Rejoignez les pionniers de la legal tech suisse</h2>
+            <p>
+                Soyez parmi les premiers à découvrir LexAssist. Inscrivez-vous pour un accès anticipé et des tarifs préférentiels.
+            </p>
+            <form class="email-form" action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="email" name="email" placeholder="votre@email.ch" required>
+                <button type="submit" class="btn-primary">S'inscrire</button>
+            </form>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">
+                Nous respectons votre vie privée. Pas de spam, promis.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">LexAssist</div>
+            <ul class="footer-links">
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Confidentialité</a></li>
+                <li><a href="#">Conditions</a></li>
+                <li><a href="mailto:contact@lexassist.ch">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 LexAssist. Tous droits réservés.</p>
+            <div class="swiss-badge">
+                <span>🇨🇭</span>
+                <span>Conçu en Suisse</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('.email-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            // For GitHub Pages, you can use Formspree or similar
+            alert('Merci ! Nous vous contacterons bientôt à ' + email);
+            this.reset();
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(26, 26, 46, 0.95)';
+            } else {
+                nav.style.background = 'rgba(26, 26, 46, 0.85)';
+            }
+        });
+    </script>
+</body>
+</html>
