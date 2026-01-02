@@ -958,6 +958,7 @@
             </p>
             <form class="email-form" action="https://formspree.io/f/xqeabyrn" method="POST">
                 <input type="email" name="email" placeholder="votre@email.ch" required>
+                <input type="text" name="_gotcha" style="display:none">
                 <button type="submit" class="btn-primary">S'inscrire</button>
             </form>
             <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">
@@ -1000,15 +1001,6 @@
             });
         });
 
-        // Form submission
-        document.querySelector('.email-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = this.querySelector('input[type="email"]').value;
-            // For GitHub Pages, you can use Formspree or similar
-            alert('Merci ! Nous vous contacterons bientôt à ' + email);
-            this.reset();
-        });
-
         // Navbar scroll effect
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
@@ -1021,3 +1013,4 @@
     </script>
 </body>
 </html>
+
