@@ -3,26 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LexAssist | Assistant IA pour la Recherche Juridique Suisse</title>
-    <meta name="description" content="LexAssist - L'assistant IA spécialisé pour les avocats suisses. Réduisez de 30% votre temps de recherche juridique grâce à l'intelligence artificielle.">
-    <meta name="keywords" content="IA juridique, assistant avocat, recherche juridique, droit suisse, legal tech, Suisse">
-    <meta property="og:title" content="LexAssist | Assistant IA Juridique Suisse">
-    <meta property="og:description" content="Réduisez de 30% votre temps de recherche juridique grâce à l'IA spécialisée pour le droit suisse.">
+    <title>LexAssist - L'IA au service de la recherche juridique suisse</title>
+    <meta name="description" content="LexAssist révolutionne la recherche juridique en Suisse. Réduisez le temps consacré à la recherche avec notre IA spécialisée pour le droit suisse. Support multilingue, tous les cantons, liens officiels directs.">
+    <meta name="keywords" content="recherche juridique, IA juridique, droit suisse, assistant juridique, LexAssist, legal tech suisse, recherche juridique IA">
+    <meta name="author" content="LexAssist">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://chevriercedric.github.io/LexAssist/">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chevriercedric.github.io/LexAssist/">
+    <meta property="og:title" content="LexAssist - L'IA au service de la recherche juridique suisse">
+    <meta property="og:description" content="Réduisez le temps consacré à la recherche juridique. IA spécialisée pour le droit suisse, tous les cantons, multilingue.">
+    <meta property="og:locale" content="fr_CH">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LexAssist - L'IA au service de la recherche juridique suisse">
+    <meta name="twitter:description" content="Réduisez le temps consacré à la recherche juridique. IA spécialisée pour le droit suisse.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+    
+    <!-- Fonts with performance optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "LexAssist",
+      "applicationCategory": "LegalTechApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "49",
+        "priceCurrency": "CHF",
+        "priceValidUntil": "2026-12-31"
+      },
+      "description": "Assistant IA pour la recherche juridique spécialisé pour le marché suisse. Réduisez le temps consacré à la recherche juridique.",
+      "featureList": [
+        "Recherche juridique instantanée",
+        "Support tous les cantons suisses",
+        "Multilingue (DE, FR, IT, RM, EN)",
+        "Liens directs vers sources officielles",
+        "Maintenance automatique des liens"
+      ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "Switzerland"
+      }
+    }
+    </script>
     <style>
         :root {
-            --primary: #1a1a2e;
-            --secondary: #16213e;
-            --accent: #c9a227;
-            --accent-light: #e8d48a;
-            --text: #e8e8e8;
-            --text-muted: #a0a0a0;
+            --primary: #E30613;
+            --primary-light: #ff4a55;
+            --primary-dark: #bf0510;
+            --secondary: #002341;
+            --secondary-light: #003a6b;
+            --accent: #0e6d28;
+            --neutral-50: #fafafa;
+            --neutral-100: #f5f5f5;
+            --neutral-200: #e5e5e5;
+            --neutral-300: #d4d4d4;
+            --neutral-400: #a3a3a3;
+            --neutral-500: #737373;
+            --neutral-600: #525252;
+            --neutral-700: #404040;
+            --neutral-800: #262626;
+            --neutral-900: #171717;
             --white: #ffffff;
-            --gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%);
-            --gradient-accent: linear-gradient(135deg, #c9a227 0%, #e8d48a 100%);
+            --success: #10b981;
+            --warning: #f59e0b;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
 
         * {
@@ -37,149 +99,175 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: var(--gradient-dark);
-            color: var(--text);
-            line-height: 1.7;
+            line-height: 1.6;
+            color: var(--neutral-800);
+            background-color: var(--white);
             overflow-x: hidden;
         }
 
-        /* Noise overlay */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-            opacity: 0.03;
-            pointer-events: none;
-            z-index: 1000;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Cormorant Garamond', serif;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
             font-weight: 600;
+            line-height: 1.2;
+            color: var(--secondary);
         }
 
-        /* Navigation */
-        nav {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header & Navigation */
+        .header {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            padding: 1.5rem 5%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--neutral-200);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            z-index: 100;
-            background: rgba(26, 26, 46, 0.85);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(201, 162, 39, 0.1);
+            justify-content: space-between;
+            padding: 1.25rem 0;
         }
 
         .logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--white);
-            text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--secondary);
+            text-decoration: none;
         }
 
         .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--gradient-accent);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
+            font-size: 2rem;
         }
 
         .nav-links {
             display: flex;
-            gap: 2.5rem;
             list-style: none;
+            gap: 2rem;
+            align-items: center;
         }
 
-        .nav-links a {
-            color: var(--text-muted);
+        .nav-link {
+            color: var(--neutral-700);
             text-decoration: none;
+            font-weight: 500;
             font-size: 0.95rem;
-            font-weight: 400;
             transition: color 0.3s ease;
-            letter-spacing: 0.02em;
         }
 
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        .nav-cta {
-            background: transparent;
-            border: 1px solid var(--accent);
-            color: var(--accent);
-            padding: 0.7rem 1.8rem;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .nav-cta:hover {
-            background: var(--accent);
+        .nav-link:hover {
             color: var(--primary);
         }
 
-        /* Hero */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding: 8rem 5% 4rem;
-            position: relative;
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
         }
 
-        .hero-bg {
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--secondary);
+            border: 2px solid var(--secondary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 0 6rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
             position: absolute;
-            top: 0;
-            right: 0;
-            width: 60%;
-            height: 100%;
-            background: radial-gradient(ellipse at 70% 30%, rgba(201, 162, 39, 0.08) 0%, transparent 60%);
-            pointer-events: none;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(227, 6, 19, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
         }
 
         .hero-content {
-            max-width: 700px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
             position: relative;
-            z-index: 2;
+            z-index: 1;
         }
 
         .hero-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: rgba(201, 162, 39, 0.1);
-            border: 1px solid rgba(201, 162, 39, 0.3);
             padding: 0.5rem 1rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            color: var(--accent);
-            margin-bottom: 2rem;
-            animation: fadeInUp 0.8s ease-out;
+            background: rgba(227, 6, 19, 0.1);
+            border: 1px solid rgba(227, 6, 19, 0.2);
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            animation: fadeInDown 0.6s ease-out;
         }
 
-        .hero-badge::before {
-            content: '';
+        .badge-dot {
             width: 8px;
             height: 8px;
-            background: var(--accent);
+            background: var(--primary);
             border-radius: 50%;
             animation: pulse 2s infinite;
         }
@@ -189,97 +277,499 @@
             50% { opacity: 0.5; }
         }
 
-        .hero h1 {
-            font-size: clamp(3rem, 6vw, 4.5rem);
-            line-height: 1.1;
+        .hero-text h1 {
+            font-size: 3.5rem;
             margin-bottom: 1.5rem;
-            animation: fadeInUp 0.8s ease-out 0.1s both;
-        }
-
-        .hero h1 span {
-            background: var(--gradient-accent);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-description {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            margin-bottom: 2.5rem;
-            max-width: 550px;
+            color: var(--secondary);
             animation: fadeInUp 0.8s ease-out 0.2s both;
         }
 
-        .hero-stats {
-            display: flex;
-            gap: 3rem;
-            margin-bottom: 3rem;
-            animation: fadeInUp 0.8s ease-out 0.3s both;
-        }
-
-        .stat {
-            text-align: left;
-        }
-
-        .stat-value {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--accent);
-            line-height: 1;
-        }
-
-        .stat-label {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-top: 0.3rem;
-        }
-
-        .hero-cta {
-            display: flex;
-            gap: 1rem;
-            animation: fadeInUp 0.8s ease-out 0.4s both;
-        }
-
-        .btn-primary {
-            background: var(--gradient-accent);
+        .hero-text .highlight {
             color: var(--primary);
-            padding: 1rem 2.5rem;
-            border: none;
+            position: relative;
+        }
+
+        .hero-text .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: rgba(227, 6, 19, 0.2);
             border-radius: 4px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
+            z-index: -1;
+        }
+
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
         }
 
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(201, 162, 39, 0.3);
+        .btn-arrow {
+            transition: transform 0.3s ease;
         }
 
-        .btn-secondary {
-            background: transparent;
-            color: var(--text);
-            padding: 1rem 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 4px;
+        .btn-primary:hover .btn-arrow {
+            transform: translateX(4px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: inline-block;
+        }
+
+        .stat-unit {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+            color: var(--neutral-600);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--neutral-600);
+            margin-top: 0.5rem;
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-card {
+            background: var(--white);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--neutral-200);
+        }
+
+        .search-demo {
+            margin-bottom: 1.5rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--neutral-200);
+            border-radius: 0.5rem;
             font-size: 1rem;
-            cursor: pointer;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .result-preview {
+            background: var(--neutral-50);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .result-item {
+            padding: 1rem;
+            background: var(--white);
+            border-radius: 0.5rem;
+            margin-bottom: 0.75rem;
+            border-left: 3px solid var(--primary);
+        }
+
+        .result-title {
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .result-meta {
+            font-size: 0.85rem;
+            color: var(--neutral-500);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 6rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            font-size: 1.15rem;
+            color: var(--neutral-600);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Problem Section */
+        .problem {
+            background: var(--neutral-50);
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .problem-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            border-top: 4px solid var(--primary);
+        }
+
+        .problem-card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .problem-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .problem-card p {
+            color: var(--neutral-600);
+            line-height: 1.7;
+        }
+
+        /* Solution Section */
+        .solution-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid var(--neutral-200);
             transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-card p {
+            color: var(--neutral-600);
+            line-height: 1.7;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            background: var(--neutral-50);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: var(--white);
+            border-radius: 1rem;
+            padding: 2.5rem 2rem;
+            box-shadow: var(--shadow-lg);
+            border: 2px solid var(--neutral-200);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border: 3px solid var(--primary);
+            transform: scale(1.05);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,250,250,1) 100%);
+        }
+
+        .pricing-card.featured::before {
+            content: '⭐ Recommandé';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 0.375rem 1.25rem;
+            border-radius: 1.5rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            box-shadow: var(--shadow-md);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.05) translateY(-5px);
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .pricing-period {
+            color: var(--neutral-500);
+            font-size: 0.9rem;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--neutral-100);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .pricing-features li::before {
+            content: '✓';
+            color: var(--success);
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .pricing-cta {
+            width: 100%;
+            text-align: center;
+        }
+
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);
+            color: var(--white);
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--primary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            font-weight: 600;
+        }
+
+        .btn-white:hover {
+            background: var(--neutral-100);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            background: var(--neutral-100);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--neutral-900);
+            color: var(--neutral-300);
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--white);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: var(--neutral-400);
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
-        .btn-secondary:hover {
-            border-color: var(--accent);
-            color: var(--accent);
+        .footer-section a:hover {
+            color: var(--white);
         }
 
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--neutral-800);
+            color: var(--neutral-500);
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-stats {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 968px) {
+            #demo .main-layout {
+                grid-template-columns: 1fr !important;
+            }
+
+            #demo .sidebar {
+                position: static !important;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero {
+                padding: 6rem 0 4rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 4rem 0;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .pricing-card.featured:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -291,608 +781,105 @@
             }
         }
 
-        /* Problem Section */
-        .problem {
-            padding: 8rem 5%;
-            background: rgba(15, 15, 26, 0.5);
-            position: relative;
-        }
-
-        .section-header {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 4rem;
-        }
-
-        .section-label {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            color: var(--accent);
-            margin-bottom: 1rem;
-        }
-
-        .section-title {
-            font-size: clamp(2rem, 4vw, 3rem);
-            margin-bottom: 1.5rem;
-        }
-
-        .section-description {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-        }
-
-        .problems-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .problem-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 2.5rem;
-            border-radius: 12px;
-            transition: all 0.4s ease;
-        }
-
-        .problem-card:hover {
-            background: rgba(201, 162, 39, 0.05);
-            border-color: rgba(201, 162, 39, 0.2);
-            transform: translateY(-5px);
-        }
-
-        .problem-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .problem-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
-            color: var(--white);
-        }
-
-        .problem-card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        /* Solution Section */
-        .solution {
-            padding: 8rem 5%;
-        }
-
-        .solution-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            max-width: 1200px;
-            margin: 0 auto;
-            align-items: center;
-        }
-
-        .solution-content h2 {
-            font-size: clamp(2rem, 4vw, 2.8rem);
-            margin-bottom: 1.5rem;
-        }
-
-        .solution-content h2 span {
-            color: var(--accent);
-        }
-
-        .solution-content p {
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-        }
-
-        .features-list {
-            list-style: none;
-        }
-
-        .features-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-
-        .features-list li:hover {
-            background: rgba(201, 162, 39, 0.05);
-        }
-
-        .feature-icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(201, 162, 39, 0.1);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            color: var(--accent);
-            font-size: 1.2rem;
-        }
-
-        .feature-text h4 {
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            margin-bottom: 0.3rem;
-            color: var(--white);
-        }
-
-        .feature-text p {
-            font-size: 0.9rem;
-            margin: 0;
-        }
-
-        .solution-visual {
-            position: relative;
-        }
-
-        .demo-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 16px;
-            padding: 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .demo-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--gradient-accent);
-        }
-
-        .demo-header {
-            display: flex;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .demo-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        .demo-dot:first-child { background: #ff5f57; }
-        .demo-dot:nth-child(2) { background: #febc2e; }
-        .demo-dot:nth-child(3) { background: #28c840; }
-
-        .demo-content {
-            font-family: 'Monaco', monospace;
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-
-        .demo-query {
-            color: var(--accent);
-            margin-bottom: 1rem;
-        }
-
-        .demo-response {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 1rem;
-            border-radius: 8px;
-            margin-top: 1rem;
-        }
-
-        .typing-cursor {
-            display: inline-block;
-            width: 2px;
-            height: 1em;
-            background: var(--accent);
-            margin-left: 2px;
-            animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
-        }
-
-        /* Pricing */
-        .pricing {
-            padding: 8rem 5%;
-            background: rgba(15, 15, 26, 0.5);
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .pricing-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 3rem;
-            text-align: center;
-            transition: all 0.4s ease;
-        }
-
-        .pricing-card.featured {
-            background: rgba(201, 162, 39, 0.05);
-            border-color: rgba(201, 162, 39, 0.3);
-            transform: scale(1.02);
-        }
-
-        .pricing-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .pricing-card.featured:hover {
-            transform: scale(1.02) translateY(-10px);
-        }
-
-        .plan-name {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            margin-bottom: 0.5rem;
-        }
-
-        .plan-price {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3.5rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 0.5rem;
-        }
-
-        .plan-price span {
-            font-size: 1rem;
-            font-weight: 400;
-            color: var(--text-muted);
-        }
-
-        .plan-description {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
-        }
-
-        .plan-features {
-            list-style: none;
-            margin-bottom: 2rem;
-            text-align: left;
-        }
-
-        .plan-features li {
-            padding: 0.7rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-            font-size: 0.95rem;
-        }
-
-        .plan-features li::before {
-            content: '✓';
-            color: var(--accent);
-            font-weight: bold;
-        }
-
-        /* Contact / CTA */
-        .cta-section {
-            padding: 8rem 5%;
-            text-align: center;
-            position: relative;
-        }
-
-        .cta-section::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(201, 162, 39, 0.1) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .cta-content {
-            position: relative;
-            z-index: 2;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .cta-content h2 {
-            font-size: clamp(2rem, 4vw, 3rem);
-            margin-bottom: 1.5rem;
-        }
-
-        .cta-content p {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            margin-bottom: 2.5rem;
-        }
-
-        /* Email Form */
-        .email-form {
-            display: flex;
-            gap: 1rem;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .email-form input {
-            flex: 1;
-            padding: 1rem 1.5rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--text);
-            font-size: 1rem;
-            font-family: 'Inter', sans-serif;
-            transition: all 0.3s ease;
-        }
-
-        .email-form input:focus {
-            outline: none;
-            border-color: var(--accent);
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        .email-form input::placeholder {
-            color: var(--text-muted);
-        }
-
-        /* Footer */
-        footer {
-            padding: 4rem 5% 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        .footer-logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--white);
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .footer-links a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: var(--accent);
-        }
-
-        .footer-bottom {
-            text-align: center;
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-
-        .swiss-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
-            margin-top: 1rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 968px) {
-            .nav-links {
-                display: none;
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
             }
-
-            .solution-grid {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .hero-stats {
-                flex-wrap: wrap;
-                gap: 2rem;
-            }
-
-            .email-form {
-                flex-direction: column;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
 
-        @media (max-width: 600px) {
-            .hero-cta {
-                flex-direction: column;
+        @keyframes countUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
             }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-            .btn-primary, .btn-secondary {
-                width: 100%;
-                justify-content: center;
-            }
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#" class="logo">
-            <span class="logo-icon">⚖️</span>
-            LexAssist
-        </a>
-        <ul class="nav-links">
-            <li><a href="#problem">Problématique</a></li>
-            <li><a href="#solution">Solution</a></li>
-            <li><a href="#pricing">Tarifs</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="nav-cta">Accès anticipé</button>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>En développement – Rejoignez les early adopters</span>
-            </div>
-            <h1>Récupérez <span>30%</span> de votre temps de recherche juridique</h1>
-            <p class="hero-description">
-                LexAssist est l'assistant IA conçu pour les avocats suisses. Recherche instantanée dans les 26 cantons, 4 langues nationales, liens directs vers les sources officielles.
-            </p>
-            <div class="hero-stats">
-                <div class="stat">
-                    <div class="stat-value">30%</div>
-                    <div class="stat-label">Temps économisé</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-value">26</div>
-                    <div class="stat-label">Cantons couverts</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-value">4</div>
-                    <div class="stat-label">Langues supportées</div>
-                </div>
-            </div>
-            <div class="hero-cta">
-                <a href="#contact" class="btn-primary">
-                    Rejoindre la liste d'attente
-                    <span>→</span>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <span class="logo-icon">⚖️</span>
+                    <span>LexAssist</span>
                 </a>
-                <a href="#solution" class="btn-secondary">Découvrir la solution</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="problem" id="problem">
-        <div class="section-header">
-            <p class="section-label">Le Problème</p>
-            <h2 class="section-title">La recherche juridique en Suisse est un casse-tête</h2>
-            <p class="section-description">
-                Les avocats suisses font face à des défis uniques qui consomment un temps précieux et impactent leur productivité.
-            </p>
-        </div>
-        <div class="problems-grid">
-            <div class="problem-card">
-                <div class="problem-icon">⏰</div>
-                <h3>30% du temps perdu</h3>
-                <p>La recherche documentaire juridique consomme près d'un tiers du temps facturable des avocats suisses.</p>
-            </div>
-            <div class="problem-card">
-                <div class="problem-icon">🏔️</div>
-                <h3>26 cantons, 26 systèmes</h3>
-                <p>Chaque canton a ses spécificités légales. Naviguer entre elles demande une expertise locale chronophage.</p>
-            </div>
-            <div class="problem-card">
-                <div class="problem-icon">🌍</div>
-                <h3>4 langues officielles</h3>
-                <p>Allemand, français, italien, romanche – les barrières linguistiques complexifient chaque recherche.</p>
-            </div>
-            <div class="problem-card">
-                <div class="problem-icon">💰</div>
-                <h3>Outils coûteux et obsolètes</h3>
-                <p>Les solutions existantes coûtent CHF 3'500-8'000/an avec des interfaces vieillissantes et aucune IA.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="solution" id="solution">
-        <div class="solution-grid">
-            <div class="solution-content">
-                <p class="section-label">La Solution</p>
-                <h2>Une IA <span>spécialisée</span> pour le droit suisse</h2>
-                <p>
-                    LexAssist combine intelligence artificielle avancée et expertise juridique suisse pour transformer votre façon de travailler.
-                </p>
-                <ul class="features-list">
-                    <li>
-                        <div class="feature-icon">🎯</div>
-                        <div class="feature-text">
-                            <h4>Recherche canton-spécifique</h4>
-                            <p>Accédez instantanément aux textes juridiques de chaque canton avec leurs spécificités locales.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature-icon">🔗</div>
-                        <div class="feature-text">
-                            <h4>Liens officiels directs</h4>
-                            <p>Uniquement des sources gouvernementales vérifiées, mises à jour automatiquement par IA.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature-icon">🌐</div>
-                        <div class="feature-text">
-                            <h4>Multilingue natif</h4>
-                            <p>Recherchez en français, recevez des résultats en allemand – avec traduction contextuelle.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature-icon">🇪🇺</div>
-                        <div class="feature-text">
-                            <h4>Cartographie UE</h4>
-                            <p>Comprenez les connexions entre droit suisse et réglementations européennes.</p>
-                        </div>
-                    </li>
+                <ul class="nav-links">
+                    <li><a href="#probleme" class="nav-link">Problème</a></li>
+                    <li><a href="#solution" class="nav-link">Solution</a></li>
+                    <li><a href="#fonctionnalites" class="nav-link">Fonctionnalités</a></li>
+                    <li><a href="#demo" class="nav-link">Démo</a></li>
+                    <li><a href="#tarifs" class="nav-link">Tarifs</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Contact</a></li>
                 </ul>
-            </div>
-            <div class="solution-visual">
-                <div class="demo-card">
-                    <div class="demo-header">
-                        <span class="demo-dot"></span>
-                        <span class="demo-dot"></span>
-                        <span class="demo-dot"></span>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>En développement – Rejoignez les early adopters</span>
                     </div>
-                    <div class="demo-content">
-                        <div class="demo-query">
-                            > Quelles sont les règles de succession pour les biens immobiliers dans le canton de Vaud?<span class="typing-cursor"></span>
+                    <h1>L'IA qui révolutionne la recherche juridique suisse</h1>
+                    <p style="font-size: 1.25rem; line-height: 1.6;">LexAssist est l'assistant IA conçu pour les avocats suisses. Validé par 6 mois de recherche marché avec des professionnels premium. Recherche instantanée, multilingue, adaptée aux spécificités cantonales.</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary btn-large">
+                            <span>Rejoindre la liste d'attente</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="#solution" class="btn btn-outline">Découvrir la solution</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="25">0</span><span class="stat-unit">%</span>
+                            <span class="stat-label">Temps économisé</span>
                         </div>
-                        <div class="demo-response">
-                            <p style="color: var(--text); margin-bottom: 0.5rem;">📍 Canton de Vaud - Droit successoral</p>
-                            <p style="font-size: 0.8rem;">
-                                Art. 560 CC - Le partage s'effectue selon...<br>
-                                → <span style="color: var(--accent);">vd.ch/succession</span><br><br>
-                                Jurisprudence récente:<br>
-                                ATF 148 III 209 - Tribunal fédéral...<br>
-                                → <span style="color: var(--accent);">bger.ch/148-III-209</span>
-                            </p>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="26">0</span>
+                            <span class="stat-label">Cantons couverts</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="4">0</span><span class="stat-unit">+1</span>
+                            <span class="stat-label">Langues supportées</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="search-demo">
+                            <input type="text" class="search-input" placeholder="Rechercher une loi ou jurisprudence..." value="Droit du travail - Licenciement">
+                            <div class="result-preview">
+                                <div class="result-item">
+                                    <div class="result-title">Code des obligations (CO) - Art. 336</div>
+                                    <div class="result-meta">Droit du travail suisse • Source officielle</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-title">Jurisprudence TF 4A_123/2023</div>
+                                    <div class="result-meta">Tribunal fédéral • Cas similaire identifié</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-title">Code des obligations (CO) - Art. 336c</div>
+                                    <div class="result-meta">Législation fédérale • Liens directs</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -900,93 +887,686 @@
         </div>
     </section>
 
-    <section class="pricing" id="pricing">
-        <div class="section-header">
-            <p class="section-label">Tarification</p>
-            <h2 class="section-title">Simple, transparent, abordable</h2>
-            <p class="section-description">
-                40-80% moins cher que les solutions traditionnelles, avec des fonctionnalités IA en plus.
-            </p>
-        </div>
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <p class="plan-name">Basic</p>
-                <p class="plan-price">CHF 49<span>/mois</span></p>
-                <p class="plan-description">Pour les avocats indépendants</p>
-                <ul class="plan-features">
-                    <li>Accès à 1 canton</li>
-                    <li>Recherches limitées (100/mois)</li>
-                    <li>Interface de base</li>
-                    <li>Support email</li>
-                </ul>
-                <a href="#contact" class="btn-secondary" style="width: 100%; text-align: center;">Rejoindre la liste</a>
+    <!-- Problem Section -->
+    <section class="section problem" id="probleme">
+        <div class="container">
+            <div class="section-title">
+                <h2>Le défi de la recherche juridique en Suisse</h2>
+                <p>Les avocats suisses consacrent une part importante de leur temps facturable à la recherche juridique</p>
             </div>
-            <div class="pricing-card featured">
-                <p class="plan-name">Professional</p>
-                <p class="plan-price">CHF 120<span>/mois</span></p>
-                <p class="plan-description">Pour les cabinets exigeants</p>
-                <ul class="plan-features">
-                    <li>Accès aux 26 cantons</li>
-                    <li>Recherches illimitées</li>
-                    <li>Fonctionnalités avancées</li>
-                    <li>Support prioritaire</li>
-                    <li>API disponible</li>
-                </ul>
-                <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Rejoindre la liste</a>
-            </div>
-            <div class="pricing-card">
-                <p class="plan-name">Enterprise</p>
-                <p class="plan-price">Sur mesure</p>
-                <p class="plan-description">Pour les grands cabinets</p>
-                <ul class="plan-features">
-                    <li>Tout Professional inclus</li>
-                    <li>Déploiement sur site</li>
-                    <li>Intégrations custom</li>
-                    <li>Account manager dédié</li>
-                    <li>SLA garanti</li>
-                </ul>
-                <a href="#contact" class="btn-secondary" style="width: 100%; text-align: center;">Nous contacter</a>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-card-icon">⏱️</div>
+                    <h3>Temps perdu</h3>
+                    <p>Une part significative du temps facturable perdue dans la recherche de documents juridiques dispersés sur de multiples sources.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-card-icon">🗺️</div>
+                    <h3>Complexité cantonale</h3>
+                    <p>26 cantons avec des spécificités légales locales qui compliquent la recherche et l'application du droit.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-card-icon">🌍</div>
+                    <h3>Barrières linguistiques</h3>
+                    <p>4 langues officielles (DE, FR, IT, RM) + anglais créant des obstacles dans l'accès et la compréhension des sources juridiques.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-card-icon">💰</div>
+                    <h3>Coûts prohibitifs</h3>
+                    <p>Les outils existants coûtent entre CHF 3'500 et 8'000 par an, inaccessibles pour de nombreux cabinets.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-card-icon">🖥️</div>
+                    <h3>Interfaces obsolètes</h3>
+                    <p>Les solutions traditionnelles offrent des interfaces datées et peu intuitives, loin des standards modernes.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-card-icon">🔗</div>
+                    <h3>Liens brisés</h3>
+                    <p>Les références vers les sources officielles se cassent régulièrement, nécessitant une maintenance constante.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Solution Section -->
+    <section class="section" id="solution">
+        <div class="container">
+            <div class="section-title">
+                <h2>La solution LexAssist</h2>
+                <p>Une IA spécialisée pour le droit suisse, conçue pour les professionnels du droit</p>
+            </div>
+            <div class="solution-features">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Recherche instantanée</h3>
+                    <p>Localisez en quelques secondes les codes juridiques, précédents et jurisprudence pertinents pour votre cas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Liens directs officiels</h3>
+                    <p>Accès direct aux recueils systématiques (RS) de chaque canton via LexFind.ch et les sites officiels cantonaux. Maintenance automatique des liens vers les sources authentiques.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Support multilingue</h3>
+                    <p>Support complet des 4 langues nationales (DE, FR, IT, RM) + anglais, avec préservation des références originales.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Spécificités cantonales</h3>
+                    <p>Recherche spécifique par canton avec prise en compte des particularités légales locales de chaque région.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Cartographie des connexions</h3>
+                    <p>Visualisez les connexions entre droit suisse et réglementations UE pour une compréhension globale.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Résumés contextuels</h3>
+                    <p>Obtenez des résumés de cas similaires avec leurs résultats pour guider votre stratégie juridique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="fonctionnalites" style="background: var(--neutral-50);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fonctionnalités avancées</h2>
+                <p>Une plateforme complète pour transformer votre pratique juridique</p>
+            </div>
+            <div class="solution-features">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>IA anti-hallucinations</h3>
+                    <p>Modèles multiples avec vérification croisée pour garantir l'exactitude des résultats et éviter les erreurs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Mise à jour automatique</h3>
+                    <p>Surveillance continue des sources officielles avec mise à jour automatique des liens et références.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Interface moderne</h3>
+                    <p>Design responsive et intuitif adapté à tous les appareils, avec une expérience utilisateur optimale.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Sécurité renforcée</h3>
+                    <p>Conformité aux standards de sécurité juridique avec protection des données sensibles.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Analytics intégrés</h3>
+                    <p>Suivez vos recherches fréquentes et optimisez votre workflow avec des statistiques détaillées.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3>Intégrations API</h3>
+                    <p>Connectez LexAssist à vos outils de gestion de cabinet pour un workflow unifié.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sources Section -->
+    <section class="section" id="sources" style="background: var(--neutral-50); padding: 5rem 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sources législatives authentiques</h2>
+                <p style="font-size: 1.125rem; color: var(--neutral-700); max-width: 800px; margin: 0 auto;">Accès direct aux recueils systématiques officiels des 26 cantons suisses</p>
+            </div>
+            <div style="max-width: 1000px; margin: 3rem auto 0;">
+                <div style="background: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 2rem; border-left: 4px solid var(--primary);">
+                    <div style="display: flex; align-items: start; gap: 1.5rem;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">🌐</div>
+                        <div style="flex: 1;">
+                            <h3 style="font-size: 1.5rem; font-weight: 600; color: var(--secondary); margin-bottom: 0.75rem;">Portail central LexFind.ch</h3>
+                            <p style="color: var(--neutral-600); line-height: 1.7; margin-bottom: 1rem;">LexFind.ch centralise l'accès unifié aux législations cantonales via sa section "Pages de la Confédération et des cantons". Chaque canton publie ses lois de manière autonome dans des recueils systématiques (RS) avec des mises à jour régulières.</p>
+                            <p style="color: var(--neutral-600); line-height: 1.7;">Les textes sont <strong>gratuits, authentiques et recherchables</strong> par mots-clés ou numéros sur les sites officiels cantonaux.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--secondary); margin-bottom: 1.5rem;">Exemples de recueils systématiques par canton</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                        <div style="padding: 1.5rem; background: var(--neutral-50); border-radius: 0.75rem; border-left: 3px solid var(--primary);">
+                            <div style="font-weight: 600; color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.1rem;">Vaud</div>
+                            <div style="color: var(--neutral-600); font-size: 0.9rem; margin-bottom: 0.5rem;">Base législative vaudoise (BLV)</div>
+                            <div style="color: var(--neutral-500); font-size: 0.85rem;">vd.ch</div>
+                        </div>
+                        <div style="padding: 1.5rem; background: var(--neutral-50); border-radius: 0.75rem; border-left: 3px solid var(--primary);">
+                            <div style="font-weight: 600; color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.1rem;">Genève</div>
+                            <div style="color: var(--neutral-600); font-size: 0.9rem; margin-bottom: 0.5rem;">Recueil systématique (rs/GE)</div>
+                            <div style="color: var(--neutral-500); font-size: 0.85rem;">SIL Genève Public</div>
+                        </div>
+                        <div style="padding: 1.5rem; background: var(--neutral-50); border-radius: 0.75rem; border-left: 3px solid var(--primary);">
+                            <div style="font-weight: 600; color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.1rem;">Valais</div>
+                            <div style="color: var(--neutral-600); font-size: 0.9rem; margin-bottom: 0.5rem;">Recueil systématique (RS)</div>
+                            <div style="color: var(--neutral-500); font-size: 0.85rem;">lex.vs.ch</div>
+                        </div>
+                        <div style="padding: 1.5rem; background: var(--neutral-50); border-radius: 0.75rem; border-left: 3px solid var(--primary);">
+                            <div style="font-weight: 600; color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.1rem;">Jura</div>
+                            <div style="color: var(--neutral-600); font-size: 0.9rem; margin-bottom: 0.5rem;">Recueil systématique (RSJU)</div>
+                            <div style="color: var(--neutral-500); font-size: 0.85rem;">rsju.jura.ch</div>
+                        </div>
+                        <div style="padding: 1.5rem; background: var(--neutral-50); border-radius: 0.75rem; border-left: 3px solid var(--primary);">
+                            <div style="font-weight: 600; color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.1rem;">Neuchâtel</div>
+                            <div style="color: var(--neutral-600); font-size: 0.9rem; margin-bottom: 0.5rem;">Recueil systématique (RSN)</div>
+                            <div style="color: var(--neutral-500); font-size: 0.85rem;">ne.ch</div>
+                        </div>
+                        <div style="padding: 1.5rem; background: var(--neutral-50); border-radius: 0.75rem; border-left: 3px solid var(--primary); display: flex; align-items: center; justify-content: center;">
+                            <div style="text-align: center;">
+                                <div style="font-weight: 600; color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.1rem;">+ 21 autres cantons</div>
+                                <div style="color: var(--neutral-600); font-size: 0.9rem;">Tous accessibles via LexFind.ch</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 0.75rem; color: white;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="font-size: 2rem;">⚖️</div>
+                            <div>
+                                <div style="font-weight: 600; margin-bottom: 0.5rem; font-size: 1.1rem;">LexAssist automatise l'accès</div>
+                                <div style="font-size: 0.95rem; opacity: 0.95;">Notre IA indexe automatiquement les 26 recueils systématiques cantonaux et maintient les liens vers les sources officielles à jour, vous donnant accès instantané à toute la législation suisse.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="section" id="demo" style="background: var(--white); padding: 4rem 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Essayez LexAssist maintenant</h2>
+                <p>Testez notre interface interactive et découvrez la puissance de la recherche juridique IA</p>
+            </div>
+        </div>
+        <div style="max-width: 1400px; margin: 3rem auto 0; padding: 0 1.5rem;">
+            <div style="background: #f5f7fa; border-radius: 1rem; padding: 2rem; box-shadow: var(--shadow-xl);">
+                <!-- Demo Header -->
+                <div style="background: white; padding: 1.5rem 2rem; border-radius: 1rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 1.5rem; font-weight: 700; color: #002341;">
+                        <span>⚖️</span>
+                        <span>LexAssist</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; color: #64748b; font-size: 0.9rem;">
+                        <span>👤</span>
+                        <span>Cabinet Demo</span>
+                        <span>•</span>
+                        <span>Professional Plan</span>
+                    </div>
+                </div>
+
+                <!-- Stats Bar -->
+                <div style="background: white; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                    <div style="text-align: center;">
+                        <span style="font-size: 2rem; font-weight: 700; color: #E30613; display: block;">847</span>
+                        <span style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Recherches ce mois</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <span style="font-size: 2rem; font-weight: 700; color: #E30613; display: block;">12h</span>
+                        <span style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Temps économisé</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <span style="font-size: 2rem; font-weight: 700; color: #E30613; display: block;">98%</span>
+                        <span style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Précision</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <span style="font-size: 2rem; font-weight: 700; color: #E30613; display: block;">26</span>
+                        <span style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Cantons actifs</span>
+                    </div>
+                </div>
+
+                <!-- Main Demo Layout -->
+                <div style="display: grid; grid-template-columns: 300px 1fr; gap: 2rem;">
+                    <!-- Sidebar -->
+                    <div style="background: white; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); height: fit-content;">
+                        <div style="margin-bottom: 2rem;">
+                            <h3 style="font-size: 0.9rem; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Filtres</h3>
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="font-size: 0.85rem; font-weight: 600; color: #1a202c; margin-bottom: 0.5rem; display: block;">Canton</label>
+                                <select id="demoCantonFilter" style="width: 100%; padding: 0.75rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 0.9rem; background: white; cursor: pointer;">
+                                    <option value="all">Tous les cantons</option>
+                                    <option value="vd">Vaud</option>
+                                    <option value="ge">Genève</option>
+                                    <option value="zh">Zurich</option>
+                                    <option value="be">Berne</option>
+                                    <option value="vs">Valais</option>
+                                </select>
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="font-size: 0.85rem; font-weight: 600; color: #1a202c; margin-bottom: 0.5rem; display: block;">Domaine juridique</label>
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; cursor: pointer;">
+                                    <input type="checkbox" id="demo-droit-travail" checked style="width: 18px; height: 18px; cursor: pointer;">
+                                    <label for="demo-droit-travail" style="font-size: 0.9rem; cursor: pointer; color: #475569;">Droit du travail</label>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; cursor: pointer;">
+                                    <input type="checkbox" id="demo-droit-famille" style="width: 18px; height: 18px; cursor: pointer;">
+                                    <label for="demo-droit-famille" style="font-size: 0.9rem; cursor: pointer; color: #475569;">Droit de la famille</label>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; cursor: pointer;">
+                                    <input type="checkbox" id="demo-droit-commercial" style="width: 18px; height: 18px; cursor: pointer;">
+                                    <label for="demo-droit-commercial" style="font-size: 0.9rem; cursor: pointer; color: #475569;">Droit commercial</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <!-- Search Section -->
+                        <div style="background: white; border-radius: 1rem; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <div style="margin-bottom: 1.5rem;">
+                                <h2 style="font-size: 1.5rem; font-weight: 700; color: #1a202c; margin-bottom: 0.5rem;">Recherche juridique intelligente</h2>
+                                <p style="color: #64748b; font-size: 0.95rem;">Posez votre question en langage naturel, notre IA trouvera les sources pertinentes</p>
+                            </div>
+                            <div style="position: relative; margin-bottom: 1rem;">
+                                <span style="position: absolute; left: 1.25rem; top: 50%; transform: translateY(-50%); font-size: 1.25rem; color: #94a3b8;">🔍</span>
+                                <label for="demoSearchInput" style="display: none;">Recherche juridique</label>
+                                <input type="text" id="demoSearchInput" style="width: 100%; padding: 1.25rem 1.25rem 1.25rem 3.5rem; border: 2px solid #e2e8f0; border-radius: 0.75rem; font-size: 1rem;" placeholder="Ex: Quelles sont les conditions de licenciement pour motif économique en Suisse ?" value="Licenciement pour motif économique" aria-label="Barre de recherche juridique - Exemple de démonstration">
+                            </div>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <button onclick="demoPerformSearch()" style="padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; font-size: 0.9rem; cursor: pointer; border: none; background: #E30613; color: white; transition: all 0.2s;" onmouseover="this.style.background='#bf0510'" onmouseout="this.style.background='#E30613'" aria-label="Lancer la recherche juridique">Rechercher</button>
+                                <button onclick="demoClearSearch()" style="padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; font-size: 0.9rem; cursor: pointer; border: none; background: #f1f5f9; color: #475569;">Effacer</button>
+                            </div>
+                        </div>
+
+                        <!-- Results Section -->
+                        <div style="background: white; border-radius: 1rem; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                                <div style="font-size: 0.9rem; color: #64748b;">
+                                    <strong id="demoResultCount" style="color: #1a202c; font-weight: 600;">5</strong> résultats trouvés pour "Licenciement pour motif économique"
+                                </div>
+                            </div>
+
+                            <div id="demoResultsContainer">
+                                <!-- Result 1 -->
+                                <div style="border: 2px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; transition: all 0.2s; cursor: pointer;" onmouseover="this.style.borderColor='#E30613'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='#e2e8f0'; this.style.boxShadow='none'">
+                                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                                        <div>
+                                            <div style="font-size: 1.1rem; font-weight: 600; color: #1a202c; margin-bottom: 0.5rem;">
+                                                Code des obligations (CO) - Art. 336
+                                                <span style="display: inline-block; padding: 0.25rem 0.75rem; border-radius: 0.375rem; font-size: 0.75rem; font-weight: 600; margin-left: 0.5rem; background: #E30613; color: white;">Loi</span>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                            <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981;"></span>
+                                            <span style="font-size: 0.85rem; color: #64748b;">Haute fiabilité</span>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.85rem; color: #64748b; margin-bottom: 1rem;">
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span>📍</span><span>Suisse (Fédéral)</span></div>
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span>📅</span><span>Dernière mise à jour: 2024</span></div>
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span>🌐</span><span>FR, DE, IT</span></div>
+                                    </div>
+                                    <div style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                                        L'article 336 du Code des obligations définit les conditions de licenciement pour motif économique. Le licenciement est justifié lorsque l'employeur ne peut plus maintenir le poste de travail pour des raisons économiques, techniques ou organisationnelles...
+                                    </div>
+                                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                                        <a href="#" style="color: #E30613; text-decoration: none; font-size: 0.9rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">📖 Lire l'article complet →</a>
+                                        <a href="#" style="color: #64748b; text-decoration: none; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">🔗 Source officielle</a>
+                                    </div>
+                                </div>
+
+                                <!-- Result 2 -->
+                                <div style="border: 2px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; transition: all 0.2s; cursor: pointer;" onmouseover="this.style.borderColor='#E30613'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='#e2e8f0'; this.style.boxShadow='none'">
+                                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                                        <div>
+                                            <div style="font-size: 1.1rem; font-weight: 600; color: #1a202c; margin-bottom: 0.5rem;">
+                                                Jurisprudence TF 4A_123/2023
+                                                <span style="display: inline-block; padding: 0.25rem 0.75rem; border-radius: 0.375rem; font-size: 0.75rem; font-weight: 600; margin-left: 0.5rem; background: #10b981; color: white;">Jurisprudence</span>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                            <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981;"></span>
+                                            <span style="font-size: 0.85rem; color: #64748b;">Haute fiabilité</span>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.85rem; color: #64748b; margin-bottom: 1rem;">
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span>📍</span><span>Tribunal fédéral</span></div>
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span>📅</span><span>Arrêt du 15 mars 2023</span></div>
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span>🔗</span><span>3 cas similaires identifiés</span></div>
+                                    </div>
+                                    <div style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                                        Arrêt du Tribunal fédéral concernant un licenciement pour motif économique dans le secteur bancaire. Le TF confirme que la notion de motif économique doit être interprétée strictement et nécessite une justification objective...
+                                    </div>
+                                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                                        <a href="#" style="color: #E30613; text-decoration: none; font-size: 0.9rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">📖 Consulter l'arrêt →</a>
+                                        <a href="#" style="color: #64748b; text-decoration: none; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">🔗 Voir cas similaires</a>
+                                    </div>
+                                </div>
+
+                                <!-- Result 3 -->
+                                <div style="border: 2px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; transition: all 0.2s; cursor: pointer;" onmouseover="this.style.borderColor='#E30613'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='#e2e8f0'; this.style.boxShadow='none'">
+                                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                                        <div>
+                                            <div style="font-size: 1.1rem; font-weight: 600; color: #1a202c; margin-bottom: 0.5rem;">
+                                                Code des obligations (CO) - Art. 336c
+                                                <span style="display: inline-block; padding: 0.25rem 0.75rem; border-radius: 0.375rem; font-size: 0.75rem; font-weight: 600; margin-left: 0.5rem; background: #E30613; color: white;">Loi</span>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                            <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981;"></span>
+                                            <span style="font-size: 0.85rem; color: #64748b;">Haute fiabilité</span>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.85rem; color: #64748b; margin-bottom: 1rem;">
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span>📍</span><span>Suisse (Fédéral)</span></div>
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span>📅</span><span>En vigueur depuis 2011</span></div>
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span>🔗</span><span>Protection contre licenciement</span></div>
+                                    </div>
+                                    <div style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                                        L'article 336c du Code des obligations prévoit la protection contre le licenciement abusif. Il définit les conditions dans lesquelles un licenciement peut être considéré comme abusif et les recours possibles pour l'employé...
+                                    </div>
+                                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                                        <a href="#" style="color: #E30613; text-decoration: none; font-size: 0.9rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">📖 Lire l'article complet →</a>
+                                        <a href="#" style="color: #64748b; text-decoration: none; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">🔗 Source officielle</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Validation Section -->
+    <section class="section" id="validation" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 5rem 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Validation marché approfondie</h2>
+                <p style="font-size: 1.125rem; color: var(--neutral-700); max-width: 800px; margin: 0 auto;">6 mois de recherche marché avec des professionnels du droit suisse</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-left: 4px solid var(--primary);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">6</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--secondary); margin-bottom: 0.75rem;">Interviews premium</h3>
+                    <p style="color: var(--neutral-600); line-height: 1.6;">Entretiens approfondis avec des cabinets premium, avocats spécialisés et professionnels du droit pour valider le besoin et affiner la solution.</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-left: 4px solid var(--success);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--success); margin-bottom: 0.5rem;">100%</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--secondary); margin-bottom: 0.75rem;">Pain point confirmé</h3>
+                    <p style="color: var(--neutral-600); line-height: 1.6;">Tous les professionnels interrogés confirment le besoin d'une solution moderne pour optimiser leur recherche juridique.</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-left: 4px solid var(--secondary);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--secondary); margin-bottom: 0.5rem;">3</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--secondary); margin-bottom: 0.75rem;">Segments identifiés</h3>
+                    <p style="color: var(--neutral-600); line-height: 1.6;">Boutiques, cabinets moyens et grandes structures avec besoins et budgets différenciés pour un pricing adapté.</p>
+                </div>
+            </div>
+            <div style="background: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-top: 2rem; border-top: 3px solid var(--primary);">
+                <h3 style="font-size: 1.5rem; font-weight: 600; color: var(--secondary); margin-bottom: 1.5rem; text-align: center;">Insights clés de la recherche marché</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div style="padding: 1rem; background: var(--neutral-50); border-radius: 0.5rem;">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">💼</div>
+                        <strong style="color: var(--secondary); display: block; margin-bottom: 0.5rem;">Sensibilité pricing</strong>
+                        <p style="font-size: 0.9rem; color: var(--neutral-600); line-height: 1.5;">Les boutiques sont très sensibles au prix, les grandes structures ont un budget mais exigent un ROI clair.</p>
+                    </div>
+                    <div style="padding: 1rem; background: var(--neutral-50); border-radius: 0.5rem;">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🎯</div>
+                        <strong style="color: var(--secondary); display: block; margin-bottom: 0.5rem;">Focus cantonal</strong>
+                        <p style="font-size: 0.9rem; color: var(--neutral-600); line-height: 1.5;">Le besoin de recherche spécifique par canton (26 cantons) est un différentiateur majeur non adressé par les solutions existantes.</p>
+                    </div>
+                    <div style="padding: 1rem; background: var(--neutral-50); border-radius: 0.5rem;">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🌐</div>
+                        <strong style="color: var(--secondary); display: block; margin-bottom: 0.5rem;">Multilingue essentiel</strong>
+                        <p style="font-size: 0.9rem; color: var(--neutral-600); line-height: 1.5;">Le support des 4 langues officielles (DE, FR, IT, RM) + anglais est critique pour les cabinets internationaux et les avocats travaillant sur plusieurs cantons.</p>
+                    </div>
+                    <div style="padding: 1rem; background: var(--neutral-50); border-radius: 0.5rem;">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">⚡</div>
+                        <strong style="color: var(--secondary); display: block; margin-bottom: 0.5rem;">Vitesse critique</strong>
+                        <p style="font-size: 0.9rem; color: var(--neutral-600); line-height: 1.5;">La rapidité de recherche est un facteur clé de différenciation pour gagner du temps facturable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Now Section -->
+    <section class="section" id="why-now" style="background: var(--white); padding: 5rem 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pourquoi maintenant ?</h2>
+                <p style="font-size: 1.125rem; color: var(--neutral-700); max-width: 800px; margin: 0 auto;">Une opportunité de marché unique pour la legal tech suisse</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">🤖</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--secondary); margin-bottom: 1rem;">Maturité de l'IA</h3>
+                    <p style="color: var(--neutral-600); line-height: 1.7;">Les modèles de langage ont atteint un niveau de précision suffisant pour des applications juridiques critiques avec vérification croisée.</p>
+                </div>
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">📈</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--secondary); margin-bottom: 1rem;">Marché en croissance</h3>
+                    <p style="color: var(--neutral-600); line-height: 1.7;">Le marché legal tech suisse est en pleine expansion avec une adoption croissante des solutions IA par les cabinets.</p>
+                </div>
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">💡</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--secondary); margin-bottom: 1rem;">Besoin validé</h3>
+                    <p style="color: var(--neutral-600); line-height: 1.7;">La recherche marché confirme un besoin réel et non adressé par les solutions existantes, créant une opportunité claire.</p>
+                </div>
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">🚀</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--secondary); margin-bottom: 1rem;">Écosystème favorable</h3>
+                    <p style="color: var(--neutral-600); line-height: 1.7;">L'écosystème legal tech suisse se développe avec des acteurs innovants et un environnement réglementaire propice à l'innovation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commercial Approach Section -->
+    <section class="section" id="commercial" style="background: var(--neutral-50); padding: 5rem 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Approche commerciale</h2>
+                <p style="font-size: 1.125rem; color: var(--neutral-700); max-width: 800px; margin: 0 auto;">Une stratégie go-to-market adaptée au marché suisse</p>
+            </div>
+            <div style="max-width: 1000px; margin: 3rem auto 0;">
+                <div style="background: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+                    <div style="display: flex; align-items: start; gap: 1.5rem; margin-bottom: 2rem;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">🎯</div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; font-weight: 600; color: var(--secondary); margin-bottom: 0.75rem;">Stratégie de segmentation</h3>
+                            <p style="color: var(--neutral-600); line-height: 1.7; margin-bottom: 1rem;">Approche différenciée par segment :</p>
+                            <ul style="color: var(--neutral-600); line-height: 1.8; padding-left: 1.5rem;">
+                                <li><strong>Boutiques</strong> : Pricing accessible (CHF 69/mois), focus sur ROI immédiat et simplicité</li>
+                                <li><strong>Cabinets moyens</strong> : Plan Professional (CHF 120/mois), fonctionnalités avancées et support prioritaire</li>
+                                <li><strong>Grandes structures</strong> : Plan Enterprise (CHF 299/mois), intégrations API et support dédié</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+                    <div style="display: flex; align-items: start; gap: 1.5rem; margin-bottom: 2rem;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">📊</div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; font-weight: 600; color: var(--secondary); margin-bottom: 0.75rem;">Modèle de croissance</h3>
+                            <p style="color: var(--neutral-600); line-height: 1.7; margin-bottom: 1rem;">Stratégie de croissance progressive :</p>
+                            <ul style="color: var(--neutral-600); line-height: 1.8; padding-left: 1.5rem;">
+                                <li><strong>Phase 1</strong> : Acquisition organique via contenu et SEO, focus sur early adopters</li>
+                                <li><strong>Phase 2</strong> : Partenariats avec associations d'avocats et réseaux professionnels</li>
+                                <li><strong>Phase 3</strong> : Expansion via références clients et case studies de ROI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <div style="display: flex; align-items: start; gap: 1.5rem;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">💬</div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; font-weight: 600; color: var(--secondary); margin-bottom: 0.75rem;">Positionnement différenciant</h3>
+                            <p style="color: var(--neutral-600); line-height: 1.7; margin-bottom: 1rem;">Positionnement clair sur trois axes :</p>
+                            <ul style="color: var(--neutral-600); line-height: 1.8; padding-left: 1.5rem;">
+                                <li><strong>Spécificité cantonale</strong> : Seule solution avec recherche explicite par canton</li>
+                                <li><strong>Pricing transparent</strong> : Modèle mensuel accessible vs. abonnements annuels opaques</li>
+                                <li><strong>Modernité</strong> : Interface moderne et expérience utilisateur optimale</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="tarifs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tarifs transparents et compétitifs</h2>
+                <p>Un modèle d'abonnement mensuel adapté à tous les budgets</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-name">Basic</div>
+                        <div class="pricing-price">CHF 69</div>
+                        <div class="pricing-period">par mois</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Accès 1 canton</li>
+                        <li>Recherches limitées (100/mois)</li>
+                        <li>Interface de base</li>
+                        <li>Support email</li>
+                        <li>Liens sources officielles</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="#contact" class="btn btn-secondary" style="width: 100%;">Commencer</a>
+                    </div>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <div class="pricing-name">Professional</div>
+                        <div class="pricing-price">CHF 120</div>
+                        <div class="pricing-period">par mois</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Accès tous les 26 cantons</li>
+                        <li>Recherches illimitées</li>
+                        <li>Fonctionnalités avancées</li>
+                        <li>Support prioritaire</li>
+                        <li>Multilingue complet (4 langues officielles + anglais)</li>
+                        <li>Analytics détaillés</li>
+                        <li>Cartographie connexions</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="#contact" class="btn btn-primary" style="width: 100%;">Commencer</a>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-name">Enterprise</div>
+                        <div class="pricing-price">CHF 299</div>
+                        <div class="pricing-period">par mois</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Tout Professional</li>
+                        <li>Fonctionnalités équipe</li>
+                        <li>Gestion utilisateurs</li>
+                        <li>Support dédié 24/7</li>
+                        <li>API intégrations</li>
+                        <li>Formation personnalisée</li>
+                        <li>Options sur mesure</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="#contact" class="btn btn-secondary" style="width: 100%;">Nous contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
     <section class="cta-section" id="contact">
-        <div class="cta-content">
-            <h2>Rejoignez les pionniers de la legal tech suisse</h2>
-            <p>
-                Soyez parmi les premiers à découvrir LexAssist. Inscrivez-vous pour un accès anticipé et des tarifs préférentiels.
-            </p>
-            <form class="email-form" action="https://formspree.io/f/xqeabyrn" method="POST">
-                <input type="email" name="email" placeholder="votre@email.ch" required>
-                <input type="text" name="_gotcha" style="display:none">
-                <button type="submit" class="btn-primary">S'inscrire</button>
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Rejoignez les pionniers de la legal tech suisse</h2>
+            <p style="font-size: 1.25rem; margin-bottom: 0.5rem;">Soyez parmi les premiers à découvrir LexAssist</p>
+            <p style="font-size: 1rem; opacity: 0.9;">Inscrivez-vous pour un accès anticipé et des tarifs préférentiels</p>
+            
+            <!-- Formulaire Formspree -->
+            <form action="https://formspree.io/f/xqeabyrn" method="POST" style="max-width: 500px; margin: 2rem auto; display: flex; flex-direction: column; gap: 1rem;" aria-label="Formulaire d'inscription à la liste d'attente">
+                <label for="email-contact" style="display: none;">Adresse email</label>
+                <input 
+                    id="email-contact"
+                    type="email" 
+                    name="email" 
+                    placeholder="votre@email.ch" 
+                    required
+                    aria-required="true"
+                    aria-label="Votre adresse email"
+                    autocomplete="email"
+                    style="width: 100%; padding: 1rem; border: 2px solid rgba(255,255,255,0.3); border-radius: 0.5rem; font-size: 1rem; background: rgba(255,255,255,0.1); color: white; backdrop-filter: blur(10px);"
+                >
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true">
+                <button type="submit" class="btn btn-white" style="width: 100%;" aria-label="S'inscrire à la liste d'attente LexAssist">
+                    S'inscrire
+                </button>
             </form>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">
-                Nous respectons votre vie privée. Pas de spam, promis.
+            
+            <p style="text-align: center; font-size: 0.9rem; opacity: 0.9; margin-top: 1rem; animation: fadeInUp 0.8s ease-out 0.4s both;">
+                🔒 Nous respectons votre vie privée. Pas de spam, promis.
             </p>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">LexAssist</div>
-            <ul class="footer-links">
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Confidentialité</a></li>
-                <li><a href="#">Conditions</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2025 LexAssist. Tous droits réservés.</p>
-            <div class="swiss-badge">
-                <span>🇨🇭</span>
-                <span>Conçu en Suisse</span>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LexAssist</h3>
+                    <p>L'assistant IA qui révolutionne la recherche juridique en Suisse.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Produit</h3>
+                    <ul>
+                        <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                        <li><a href="#tarifs">Tarifs</a></li>
+                        <li><a href="#solution">Solution</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Entreprise</h3>
+                    <ul>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact">À propos</a></li>
+                        <li><a href="#contact">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Légal</h3>
+                    <ul>
+                        <li><a href="#contact">Mentions légales</a></li>
+                        <li><a href="#contact">Confidentialité</a></li>
+                        <li><a href="#contact">CGV</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LexAssist. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
     <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1001,16 +1581,260 @@
             });
         });
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.style.background = 'rgba(26, 26, 46, 0.95)';
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.problem-card, .feature-card, .pricing-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Animate statistics counter
+        function animateCounter(element, target, duration = 2000) {
+            const start = 0;
+            const increment = target / (duration / 16);
+            let current = start;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = Math.floor(target);
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 16);
+        }
+
+        // Trigger counter animation when hero stats are visible
+        const statsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number[data-target]');
+                    statNumbers.forEach(stat => {
+                        const target = parseInt(stat.getAttribute('data-target'));
+                        animateCounter(stat, target);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) {
+            statsObserver.observe(heroStats);
+        }
+
+        // Demo Functions - Base de données de démonstration
+        const demoResultsDatabase = {
+            'licenciement': [
+                {
+                    title: 'Code des obligations (CO) - Art. 336',
+                    type: 'Loi',
+                    typeColor: '#E30613',
+                    location: 'Suisse (Fédéral)',
+                    date: 'Dernière mise à jour: 2024',
+                    languages: 'FR, DE, IT',
+                    description: 'L\'article 336 du Code des obligations définit les conditions de licenciement pour motif économique. Le licenciement est justifié lorsque l\'employeur ne peut plus maintenir le poste de travail pour des raisons économiques, techniques ou organisationnelles...',
+                    linkText: 'Lire l\'article complet →'
+                },
+                {
+                    title: 'Jurisprudence TF 4A_123/2023',
+                    type: 'Jurisprudence',
+                    typeColor: '#10b981',
+                    location: 'Tribunal fédéral',
+                    date: 'Arrêt du 15 mars 2023',
+                    languages: 'FR',
+                    description: 'Arrêt du Tribunal fédéral concernant un licenciement pour motif économique dans le secteur bancaire. Le TF confirme que la notion de motif économique doit être interprétée strictement et nécessite une justification objective...',
+                    linkText: 'Consulter l\'arrêt →'
+                },
+                {
+                    title: 'Code des obligations (CO) - Art. 336c',
+                    type: 'Loi',
+                    typeColor: '#E30613',
+                    location: 'Suisse (Fédéral)',
+                    date: 'En vigueur depuis 2011',
+                    languages: 'FR, DE, IT',
+                    description: 'L\'article 336c du Code des obligations prévoit la protection contre le licenciement abusif. Il définit les conditions dans lesquelles un licenciement peut être considéré comme abusif et les recours possibles pour l\'employé...',
+                    linkText: 'Lire l\'article complet →'
+                }
+            ],
+            'contrat': [
+                {
+                    title: 'Code des obligations (CO) - Art. 1',
+                    type: 'Loi',
+                    typeColor: '#E30613',
+                    location: 'Suisse (Fédéral)',
+                    date: 'Dernière mise à jour: 2024',
+                    languages: 'FR, DE, IT',
+                    description: 'Le Code des obligations régit les contrats en droit suisse. L\'article 1 définit les principes généraux applicables à tous les contrats, y compris la liberté contractuelle et les obligations des parties...',
+                    linkText: 'Lire l\'article complet →'
+                },
+                {
+                    title: 'Jurisprudence TF 4A_456/2022',
+                    type: 'Jurisprudence',
+                    typeColor: '#10b981',
+                    location: 'Tribunal fédéral',
+                    date: 'Arrêt du 20 juin 2022',
+                    languages: 'FR',
+                    description: 'Arrêt concernant l\'interprétation d\'un contrat de prestation de services. Le TF précise les conditions de validité et d\'exécution des contrats dans le contexte commercial suisse...',
+                    linkText: 'Consulter l\'arrêt →'
+                }
+            ],
+            'divorce': [
+                {
+                    title: 'Code civil suisse (CC) - Art. 111',
+                    type: 'Loi',
+                    typeColor: '#E30613',
+                    location: 'Suisse (Fédéral)',
+                    date: 'Dernière mise à jour: 2024',
+                    languages: 'FR, DE, IT',
+                    description: 'L\'article 111 du Code civil suisse régit les conditions et la procédure de divorce. Il définit les motifs de divorce et les obligations des époux dans le processus de séparation...',
+                    linkText: 'Lire l\'article complet →'
+                },
+                {
+                    title: 'Jurisprudence TF 5A_789/2023',
+                    type: 'Jurisprudence',
+                    typeColor: '#10b981',
+                    location: 'Tribunal fédéral',
+                    date: 'Arrêt du 10 septembre 2023',
+                    languages: 'FR',
+                    description: 'Arrêt concernant la répartition des biens lors d\'un divorce. Le TF précise les règles applicables au partage du patrimoine matrimonial et à la pension alimentaire...',
+                    linkText: 'Consulter l\'arrêt →'
+                }
+            ],
+            'default': [
+                {
+                    title: 'Résultat de recherche juridique',
+                    type: 'Loi',
+                    typeColor: '#E30613',
+                    location: 'Suisse (Fédéral)',
+                    date: 'Dernière mise à jour: 2024',
+                    languages: 'FR, DE, IT',
+                    description: 'Votre recherche a retourné des résultats pertinents. LexAssist analyse automatiquement les sources juridiques suisses pour vous fournir les informations les plus précises...',
+                    linkText: 'Consulter la source →'
+                },
+                {
+                    title: 'Jurisprudence pertinente',
+                    type: 'Jurisprudence',
+                    typeColor: '#10b981',
+                    location: 'Tribunal fédéral',
+                    date: 'Arrêt récent',
+                    languages: 'FR',
+                    description: 'Des arrêts de jurisprudence correspondant à votre recherche ont été identifiés. Ces décisions peuvent vous aider à comprendre l\'application pratique du droit suisse...',
+                    linkText: 'Consulter l\'arrêt →'
+                }
+            ]
+        };
+
+        function demoPerformSearch() {
+            const searchInput = document.getElementById('demoSearchInput');
+            const query = searchInput.value.trim().toLowerCase();
+            
+            if (!query) {
+                alert('Veuillez entrer une recherche');
+                return;
+            }
+
+            // Animation de recherche
+            const resultsContainer = document.getElementById('demoResultsContainer');
+            const resultCount = document.getElementById('demoResultCount');
+            
+            resultsContainer.style.opacity = '0.5';
+            resultsContainer.innerHTML = '<div style="text-align: center; padding: 2rem;"><div style="font-size: 2rem; margin-bottom: 1rem;">⏳</div><p style="color: #64748b;">Recherche en cours...</p></div>';
+            
+            // Déterminer quels résultats afficher selon la recherche
+            let results = [];
+            if (query.includes('licenciement') || query.includes('licencier') || query.includes('motif économique')) {
+                results = demoResultsDatabase['licenciement'];
+            } else if (query.includes('contrat') || query.includes('convention') || query.includes('accord')) {
+                results = demoResultsDatabase['contrat'];
+            } else if (query.includes('divorce') || query.includes('séparation') || query.includes('mariage')) {
+                results = demoResultsDatabase['divorce'];
             } else {
-                nav.style.background = 'rgba(26, 26, 46, 0.85)';
+                results = demoResultsDatabase['default'];
+            }
+            
+            // Simuler un délai de recherche
+            setTimeout(() => {
+                resultsContainer.style.opacity = '1';
+                resultCount.textContent = results.length;
+                resultCount.parentElement.innerHTML = `<strong id="demoResultCount" style="color: #1a202c; font-weight: 600;">${results.length}</strong> résultat${results.length > 1 ? 's' : ''} trouvé${results.length > 1 ? 's' : ''} pour "${searchInput.value}"`;
+                
+                // Générer le HTML des résultats
+                let resultsHTML = '';
+                results.forEach((result, index) => {
+                    resultsHTML += `
+                        <div style="border: 2px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; transition: all 0.2s; cursor: pointer;" onmouseover="this.style.borderColor='#E30613'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='#e2e8f0'; this.style.boxShadow='none'">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                                <div>
+                                    <div style="font-size: 1.1rem; font-weight: 600; color: #1a202c; margin-bottom: 0.5rem;">
+                                        ${result.title}
+                                        <span style="display: inline-block; padding: 0.25rem 0.75rem; border-radius: 0.375rem; font-size: 0.75rem; font-weight: 600; margin-left: 0.5rem; background: ${result.typeColor}; color: white;">${result.type}</span>
+                                    </div>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981;"></span>
+                                    <span style="font-size: 0.85rem; color: #64748b;">Haute fiabilité</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.85rem; color: #64748b; margin-bottom: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 0.5rem;"><span>📍</span><span>${result.location}</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.5rem;"><span>📅</span><span>${result.date}</span></div>
+                                <div style="display: flex; align-items: center; gap: 0.5rem;"><span>🌐</span><span>${result.languages}</span></div>
+                            </div>
+                            <div style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                                ${result.description}
+                            </div>
+                            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                                <a href="#" style="color: #E30613; text-decoration: none; font-size: 0.9rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">📖 ${result.linkText}</a>
+                                <a href="#" style="color: #64748b; text-decoration: none; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">🔗 Source officielle</a>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                resultsContainer.innerHTML = resultsHTML;
+            }, 800);
+        }
+
+        function demoClearSearch() {
+            document.getElementById('demoSearchInput').value = '';
+            document.getElementById('demoResultsContainer').innerHTML = `
+                <div style="text-align: center; padding: 4rem 2rem; color: #64748b;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🔍</div>
+                    <h3 style="font-size: 1.25rem; color: #1a202c; margin-bottom: 0.5rem;">Commencez votre recherche</h3>
+                    <p>Entrez votre question juridique dans la barre de recherche ci-dessus</p>
+                </div>
+            `;
+            document.getElementById('demoResultCount').textContent = '0';
+        }
+
+        // Recherche au clic sur Entrée dans la démo
+        document.getElementById('demoSearchInput')?.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                demoPerformSearch();
             }
         });
+        
+        // Google Analytics (à remplacer par votre ID de tracking)
+        // window.dataLayer = window.dataLayer || [];
+        // function gtag(){dataLayer.push(arguments);}
+        // gtag('js', new Date());
+        // gtag('config', 'G-XXXXXXXXXX');
     </script>
+    
+    <!-- Google Analytics (décommentez et remplacez G-XXXXXXXXXX par votre ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
 </body>
 </html>
-
